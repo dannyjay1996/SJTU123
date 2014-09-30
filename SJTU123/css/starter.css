@@ -1,0 +1,88 @@
+html, body {
+  height: 100%;
+    font-family: 'Microsoft Yahei';
+}
+
+#logo{
+	margin-top:40px;
+	height:100px;
+	text-align: -webkit-center;
+}
+
+#search{
+	
+	height:auto;
+	width:650px;
+	text-align: -webkit-center;
+}
+
+#search .tabLine{
+	display:block;
+	margin-bottom:3px;
+	position:relative;
+	height:25px;
+}
+
+#search .tabLine ul{
+	float: left;
+	padding-left: 110px;
+	margin-bottom:none;
+}
+
+#search .tabLine ul li{
+	display: inline-block;
+}
+
+#search  .tab{
+
+	width:60px;
+	height:25px;
+	line-height:25px;
+	text-align: center;
+	font-size: 14px;
+	font-family:'Microsoft Yahei';
+	font-weight:400;
+	vertical-align: middle;
+	background-color: #F0F0F0;	
+}
+
+#search .tabLine ul li:hover,focus{
+	background-color: #BEBEBE;	
+	cursor:pointer;
+}
+
+#search .logo{
+	height:24px;
+	position:absolute;
+
+}
+
+#search .left{
+	float:left;
+	margin:5px 10px 0 0;
+}
+
+#search .middle{
+	position:relative;
+	left:100px;
+}
+
+#search .search-btn{
+	float:left;
+
+	width:450px;
+	height:30px;
+
+}
+
+#search .button-wrapper{
+	position:relative;
+	left:52px;
+	margin-top:10px;
+}
+
+#search .button{
+	width:100px;
+	height:30px;
+}
+
