@@ -10,8 +10,8 @@
       <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
       <link href="css/starter.css" rel="stylesheet" type="text/css">
 
-      <script type="text/javascript" src="js/bootstrap.min.js"></script>
-      <script type="text/javascript" src="js/starter.js"></script>
+      <!--<script type="text/javascript" src="js/bootstrap.min.js"></script>-->
+
 </head>
 
 <body>
@@ -22,36 +22,57 @@
                   <div class="tabLine">
                         <ul>
                               <li class="tab" id="baidu">百度</li>
-                              <li class="tab" id="goggle">goggle</li>
+                              <li class="tab" id="google">google</li>
                         </ul>
                  </div>
+            <!--<ul class="left logo">
+               
+               <li style="display:none;" id="baidu"><img class="img-hook"  src="http://s1.hao123img.com/res/images/search_logo/web.png"alt="百度首页" width="97" height="32"/></li>
+               <li style="display:none;" id="google"><img class="img-hook" src="pic/gglogo.png" alt="谷歌首页" width="97" height="32"></li>
+
+            </ul>-->
 
             <div id="search-wrapper">
               <div class="left logo" id="baidulogo" style="display:block" >
                     <a id="search_logolink" class="link" title="百度首页" href="http://www.baidu.com/?tn=91420903_hao_pg">
                              <img class="img-hook" src="http://s1.hao123img.com/res/images/search_logo/web.png" alt="百度首页" width="97" height="32">
                     </a>
-            </div>
-            <div class="left logo" id="googlelogo" style="display:none">
+              </div>
+              <div class="left logo" id="googlelogo" style="display:none">
                     <a id="search_logolink"  class="link" title="谷歌首页" href="https://www.google.com.hk/?gws_rd=ssl">
                              <img class="img-hook" src="pic/gglogo.png" alt="谷歌首页" width="97" height="32">
                     </a>
-            </div>
-            <form style="display:block" action="http://www.baidu.com/baidu" method="get">
+              </div>
+              <form style="display:block" action="http://www.baidu.com/baidu" method="get">
                   <input name=tn type="hidden" value="baidu"/>
                   <input type="text" name="word" class="type"/>
                   <input  class="button" type="submit" value="百度一下" />
-            </form>
-            <form style="display:none" action="http://www.google.com/search" method="get">
+              </form>
+              <form style="display:none" action="http://www.google.com/search" method="get">
                   <input type="text" name="q"class="type"/>
                   <input  class="button" type="submit" value="google搜索"/>
-            </form>
+              </form>
+
             </div>
         </div>
 
 
             <div class="img_wrap">
-                        <ul class="img_wrap1">
+                        <ul class="img_section">
+                            <li>
+                                <span><h3>校外</h3></span>
+                            </li>
+                            <li>
+                                <span><h3>生活相关</h3></span>
+                            </li>
+                            <li>
+                                <span><h3>教学相关</h3></span>
+                            </li>
+                            <li>
+                                <span><h3>活动相关</h3></span>
+                            </li>
+                        </ul>
+                        <ul class="img_wrap1" id="wrap1">
                             <li>
                                     <a href="http://www.renren.com" target="_blank" >
                                     <div class="content" >
@@ -127,8 +148,102 @@
                         </ul>
 
 
+                        <ul class="img_wrap1" id="wrap2">
+                          <li>
+                                    <a href="http://jwc.sjtu.edu.cn/" target="_blank">
+                                    <div class="content">
+                                    <img src="http://121.40.178.228:8089/public/images/jwc.jpg" width="174" height="110">
+                                    <!--<div class="img_msg">
+                                    <h3>教务处</h3>
+
+                                          <p>上海交通大学本科教学信息网</p>
+                                          </div>
+                                    </div>-->
+                                    <div class="content2"hidden="hidden">
+                                            <h3>教务处</h3>
+                                            <p>上海交通大学本科教学信息网</p>
+                                  </div>
+                                  </a>
+                          </li>
+                          <li>
+                                <a href="http://electsys.sjtu.edu.cn/" target="_blank">
+                                <div class="content" >
+                                      <img src="http://121.40.178.228:8089/public/images/jyxxfww.jpg" width="174" height="110">
+                                <!--<div class="img_msg">
+                                <h3>教育信息服务网</h3>
+
+                                <p>对原选课系统的全面升级</p>
+                            </div>-->
+                                </div>
+                                <div class="content2"hidden="hidden">
+                                        <h3>教育信息服务网</h3>
+                                        <p>对原选课系统的全面升级</p>
+
+                                </div>
+                               </a>
+                          </li>
+
+                          <li>
+                                <a href="http://www.jdcw.sjtu.edu.cn/" target="_blank">
+                                <div class="content" >
+                                    <img src="http://121.40.178.228:8089/public/images/cwc.jpg" width="174" height="110">
+                                <!--<div class="img_msg">
+                                <h3>财务处</h3>
+
+                                <p>上海交通大学财务信息门户</p>
+                                </div>-->
+                                </div>
+                                <div class="content2"hidden="hidden">
+                                      <h3>财务处</h3>
+                                      <p>上海交通大学财务信息门户</p>
+                                 </div>
+                                </a>
+                          </li>
+
+                          <li>
+                                <a href="http://pec.sjtu.edu.cn/" target="_blank">
+                                <div class="content">
+                                    <img src="http://121.40.178.228:8089/public/images/wlsy.jpg" width="174" height="110">
+                                <!--<div class="img_msg">
+                                <h3>物理实验网</h3>
+
+                                <p>上海交通大学物理实验中心</p>
+                            </div>-->
+                                </div>
+                                <div class="content2"hidden="hidden">
+                                      <h3>物理实验网</h3>
+                                      <p>上海交通大学物理实验中心</p>
+                                 </div>
+                                </a>
+                          </li>
+
+                          <li>
+                                <a href="http://www.sjtu.edu.cn/" target="_blank">
+                                <div class="content" >
+                                      <img src="http://121.40.178.228:8089/public/images/jdzy.jpg" width="174" height="110">
+                                <!--<div class="img_msg">
+                                <h3>交大主页</h3>
+
+                                <p>上海交通大学欢迎你</p>
+                            </div>-->
+                                </div>
+                                <div class="content2"hidden="hidden">
+                                    <h3>交大主页</h3>
+                                    <p>上海交通大学欢迎你</p>
+                                </div>
+                               </a>
+                          </li>
+                       </ul>
+
+
 
             
       </div>
+
+      <footer>
+        <script type="text/javascript" src="js/starter.js"></script>
+      </footer>
 </body>
+
+
 </html>
