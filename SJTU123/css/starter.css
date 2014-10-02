@@ -1,6 +1,7 @@
 html, body {
   height: 100%;
     font-family: 'Microsoft Yahei';
+    overflow: hidden;
 }
 
 #logo{
@@ -140,6 +141,32 @@ html, body {
 }
 
 
+#left_pro{
+	position:absolute;
+	top:10%;
+	left:1%;
+  	margin-top: 10%;
+  	margin-bottom:10%;
+  	margin-left: 100px;
+  	font-size: 400%;
+  	opacity: 0.15;
+  	cursor: pointer;
+  	padding: 10px;
+
+}
+#right_pro{
+	position:absolute;
+	top:10%;
+	right:1%;
+  	margin-top: 10%;
+  	margin-right:100px;
+  	margin-bottom:10%;
+  	font-size: 400%;
+  	opacity: 0.15;
+  	cursor: pointer;
+  	padding: 10px;
+}
+
 
 .img_section{
 	position:relative;
@@ -149,7 +176,7 @@ html, body {
 	margin-bottom:0;
 	padding-left:15%;
 	margin-left:15%;
-	margin-right:15%;
+	margin-right:14%;
 	background-color: #f9f9f9;
 	
 }
@@ -186,7 +213,7 @@ html, body {
 
 }
 
-.img_wrap1{
+.img_wrap_section{
 	position:absolute;
 
 	left:0;
@@ -198,7 +225,7 @@ html, body {
 }
 
 
-.img_wrap1 li{
+.img_wrap_section li{
 	list-style: none;
 	position:relative;
 	float:left;
@@ -207,18 +234,33 @@ html, body {
 	height:45%;	
 }
 
-.img_wrap1 .content{
+.img_wrap_section .content{
 	border:1px solid #bebebe;
 	margin-top:3%;
 	background-color:#FFFFFF;
 	width:210px;
 }
 
-.img_wrap1 img{
+.img_wrap_section img{
 	position:relative;
 	margin:20px 25px 25px 20px;
 	height:105px;
 	width:160px;
 
 
+}
+
+ #wrap_outside li img{
+	opacity: 1;
+}
+
+ #wrap_teach li img {
+	opacity: 0;
+}
+
+ #wrap_life li img {
+	opacity: 0;
+}
+ #wrap_activity li img {
+	opacity: 0;
 }

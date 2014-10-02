@@ -1,4 +1,4 @@
-var search = document.getElementById("search");            
+var search = document.getElementById("search");           
 var forms = document.getElementsByTagName("form");            
 var ul = search.getElementsByTagName("ul")[0];            
 var li = ul.getElementsByTagName("li");            
@@ -44,3 +44,30 @@ var googlelogo = document.getElementById("googlelogo");
 		baidulogo.style.display = "none"; 
 		googlelogo.style.display = "block"; 
 	};
+
+
+/*var img =document.getElementById("img_wrap");
+var section=img.getElementsByTagName("ul")[0];
+var selection = section.getElementsByTagName("li");
+var length = selection.length;
+var wrap = img.getElementsByTagName("ul");
+
+	/*for(var i=0;i<length;i++){
+		selection[i].onclick=function(){
+			for(var j=1;j<=length;j++){
+				wrap[j].hide();
+			}
+			
+			var k=i+1;
+			wrap[k].show();
+		}
+
+		selection[i].onmouseover = function(){ 
+    			selection[i].background="#FFFFFF";
+			 }                
+		selection[i].onmouseout = function(){  
+			selection[i].background="#cecece";
+			}
+	};     */
+
+

@@ -9,8 +9,17 @@
 
       <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
       <link href="css/starter.css" rel="stylesheet" type="text/css">
+      <link href="css/animate.css" rel="stylesheet" type="text/css">
 
-      <!--<script type="text/javascript" src="js/bootstrap.min.js"></script>-->
+
+      <script type="text/javascript" src="js/jquery.min.js"></script>
+      <script type="text/javascript" src="js/bootstrap.min.js"></script>
+      <script type="text/javascript" src="js/better.js"></script>
+      
+      <meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, minimum-scale=1, user-scalable=no">
+
+
+
 
 </head>
 
@@ -57,22 +66,26 @@
         </div>
 
 
-            <div class="img_wrap">
-                        <ul class="img_section">
-                            <li>
+            <div class="img_wrap" id="img_wrap">
+        
+                        <span class="glyphicon glyphicon-chevron-left" id="left_pro"></span>
+                        <span class="glyphicon glyphicon-chevron-right" id="right_pro"></span>
+                        <ul class="img_section" id="img_selection">
+                            <li >
                                 <span><h3>校外</h3></span>
                             </li>
-                            <li>
-                                <span><h3>生活相关</h3></span>
-                            </li>
-                            <li>
+                            <li >
                                 <span><h3>教学相关</h3></span>
                             </li>
-                            <li>
+                            <li >
+                                <span><h3>生活相关</h3></span>
+                            </li>
+                            <li >
                                 <span><h3>活动相关</h3></span>
                             </li>
+
                         </ul>
-                        <ul class="img_wrap1" id="wrap1">
+                        <ul class="img_wrap_section" name="img_wrap_section"id="wrap_outside" >
                             <li>
                                     <a href="http://www.renren.com" target="_blank" >
                                     <div class="content" >
@@ -148,7 +161,7 @@
                         </ul>
 
 
-                        <ul class="img_wrap1" id="wrap2">
+                        <ul class="img_wrap_section" name="img_wrap_section" id="wrap_teach" >
                           <li>
                                     <a href="http://jwc.sjtu.edu.cn/" target="_blank">
                                     <div class="content">
@@ -236,7 +249,187 @@
                        </ul>
 
 
+                         <ul class="img_wrap_section" name="img_wrap_section" id="wrap_life" >
+                                <li>
+                                      <a href="http://ele.me/" target="_blank">
+                                      <div class="content" >
+                                            <img src="http://121.40.178.228:8089/public/images/eleme.jpg" width="174" height="110">
 
+                                      <!--<div class="img_msg">
+                                <h3>饿了么</h3>
+
+                                <p>中国最专业的网上订餐平台</p>
+                            </div>-->
+                                      </div>
+                                      <div class="content2"hidden="hidden">
+                                      <h3>饿了么</h3>
+
+                                      <p>中国最专业的网上订餐平台</p>
+                                      </div>
+                                      </a>
+                                </li>
+
+                                <li>
+                                      <a href="http://mypower.sjtu.edu.cn/" target="_blank">
+                                      <div class="content" >
+                                            <img src="http://121.40.178.228:8089/public/images/sdcx.jpg" width="174" height="110">
+                                      <!--<div class="img_msg">
+                                      <h3>水电费查询</h3>
+
+                                <p>高校后勤数字化管理平台</p>
+                            </div>-->
+                                      </div>
+                                      <div class="content2"hidden="hidden">
+                                          <h3>水电费查询</h3>
+
+                                          <p>高校后勤数字化管理平台</p>
+                                      </div>
+                                       </a>
+                                 </li>
+
+                                 <li>
+                                      <a href="http://nimo.sjtu.edu.cn/" target="_blank">
+                                      <div class="content" >
+                                      <img src="http://121.40.178.228:8089/public/images/nimo.jpg" width="174" height="110">
+                                      <!--<div class="img_msg">
+                                <h3>NIMO网管部</h3>
+
+                                <p>学生宿舍网络信息系统</p>
+                            </div>-->
+                                      </div>
+                                      <div class="content2"hidden="hidden">
+                                          <h3>NIMO网管部</h3>
+
+                                         <p>学生宿舍网络信息系统</p>
+                                      </div>
+                                      </a>
+                                </li>
+
+                                <li>
+                                      <a href="http://www.huanxiao.cc/" target="_blank">
+                                      <div class="content">
+                                          <img src="http://121.40.178.228:8089/public/images/huanxiao.jpg" width="174" height="110">
+                                    <!--<div class="img_msg">
+                                <h3>欢校网</h3>
+
+                                <p>一站式社区网上超市</p>
+                            </div>-->
+                                      </div>
+                                      <div class="content2"hidden="hidden">
+                                          <h3>欢校网</h3>
+                                          <p>一站式社区网上超市</p>
+                                      </div>
+                                      </a>
+                                </li>
+
+                                <li>
+                                      <a href="http://aixinwu.sjtu.edu.cn/" target="_blank">
+                                      <div class="content" >
+                                            <img src="http://121.40.178.228:8089/public/images/aixinwu.jpg" width="174" height="110">
+                            <!--<div class="img_msg">
+                                <h3>爱心屋</h3>
+
+                                <p>全新的慈善公益捐赠平台</p>
+                            </div>-->
+                                      </div>
+                                      <div class="content2"hidden="hidden">
+                                          <h3>爱心屋</h3>
+                                          <p>全新的慈善公益捐赠平台</p>
+                                      </div>
+                                      </a>
+                                </li>
+
+                       </ul>
+
+                      <ul class="img_wrap_section" name="img_wrap_section"  id="wrap_activity" >
+                                <li>
+                                    <a href="ttp://vol.sjtu.edu.cn/" target="_blank">
+                                    <div class="content" >
+                                    <img src="http://121.40.178.228:8089/public/images/xqzd.jpg" width="174" height="110">
+
+                                    <!--<div class="img_msg">
+                                <h3>校青志队</h3>
+
+                                <p>上海交通大学青年志愿者服务总队</p>
+                            </div>-->
+                                    </div>
+                                    <div class="content2" hidden="hidden">
+                                    <h3>校青志队</h3>
+                                    <p>上海交通大学青年志愿者服务总队</p>
+                                   </div>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="https://bbs.sjtu.edu.cn/" target="_blank">
+                                    <div class="content">
+                                        <img src="http://121.40.178.228:8089/public/images/bbs.jpg" width="174" height="110">
+
+                            <!--<div class="img_msg">
+                                <h3>饮水思源BBS</h3>
+
+                                <p>校内外站友的信息交流平台</p>
+                            </div>-->
+                                  </div>
+                                  <div class="content2" hidden="hidden">
+                                  <h3>饮水思源BBS</h3>
+
+                                  <p>校内外站友的信息交流平台</p>
+                                  </div>
+                                </a>
+                                </li>
+
+                                <li>
+                                    <a href="http://www.yiban.cn/" target="_blank">
+                                    <div class="content">
+                                        <img src="http://121.40.178.228:8089/public/images/yiban.jpg" width="174" height="110">
+
+                            <!--<div class="img_msg">
+                                <h3>易班</h3>
+
+                                <p>易班网是高校教育教学、生活服务、文化娱乐的综合性互动社区</p>
+                            </div>-->
+                                    </div>
+                                    <div class="content2"hidden="hidden">
+                                    <h3>易班</h3>
+                                    <p>易班网是高校教育教学、生活服务、文化娱乐的综合性互动社区</p>
+                                    </div>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="http://affairs.sjtu.edu.cn/" target="_blank">
+                                    <div class="content">
+                                          <img src="http://121.40.178.228:8089/public/images/xsswzx.jpg" width="174" height="110">
+                            <!--<div class="img_msg">
+                                <h3>学生事务中心</h3>
+
+                                <p>学生事务中心</p>
+                            </div>-->
+                                    </div>
+                                    <div class="content2" hidden="hidden">
+                                    <h3>学生事务中心</h3>
+                                    <p>学生事务中心</p>
+                                    </div>
+                                    </a>
+                                 </li>
+
+                                 <li>
+                                    <a href="http://tongqu.me/" target="_blank">
+                                    <div class="content">
+                                        <img src="http://121.40.178.228:8089/public/images/tongqu.jpg" width="174" height="110">
+                                    <!--<div class="img_msg">
+                                    <h3>同去网</h3>
+                                    <p>提供校园活动的信息整合</p>
+                                </div>-->
+                                    </div>
+                                    <div class="content2" hidden="hidden">
+                                    <h3>同去网</h3>
+                                    <p>提供校园活动的信息整合</p>
+                                    </div>
+                                    </a>
+                                </li>
+                          </ul>
             
       </div>
 
