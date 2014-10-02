@@ -9,12 +9,15 @@
 
       <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
       <link href="css/starter.css" rel="stylesheet" type="text/css">
-      <link href="css/animate.css" rel="stylesheet" type="text/css">
+      <!--<link href="css/animate.css" rel="stylesheet" type="text/css">-->
 
 
       <script type="text/javascript" src="js/jquery.min.js"></script>
-      <script type="text/javascript" src="js/bootstrap.min.js"></script>
-      <script type="text/javascript" src="js/better.js"></script>
+      <!--<script type="text/javascript" src="js/bootstrap.min.js"></script>-->
+      <!--<script type="text/javascript" src="js/better.js"></script>-->
+
+
+      
       
       <meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, minimum-scale=1, user-scalable=no">
 
@@ -25,7 +28,7 @@
 
 <body>
       <div id="logo">
-            <img style="padding-top:0px" height="100" src="pic/sjtu123.png" width="350" alt="SJTU123">
+            <a href="#"><img style="padding-top:0px" height="100" src="pic/sjtu123.png" width="350" alt="SJTU123"></a>
         </div>
             <div id="search" class="search">
                   <div class="tabLine">
@@ -66,36 +69,43 @@
         </div>
 
 
-            <div class="img_wrap" id="img_wrap">
+            <div id="img_wrap" class="img_wrap" data-ride="carousel">
         
-                        <span class="glyphicon glyphicon-chevron-left" id="left_pro"></span>
-                        <span class="glyphicon glyphicon-chevron-right" id="right_pro"></span>
-                        <ul class="img_section" id="img_selection">
-                            <li >
+                        <!--<span class="glyphicon glyphicon-chevron-left" id="left_pro"></span>
+                        <span class="glyphicon glyphicon-chevron-right" id="right_pro"></span>-->
+                        <!--<ol class="carousel-indicators">
+                                            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                                            <li data-target="#myCarousel" data-slide-to="1"></li>
+                                            <li data-target="#myCarousel" data-slide-to="2"></li>
+                                            <li data-target="#myCarousel" data-slide-to="3"></li>
+                        </ol>-->
+                        <ul class="img_section" id="img_section">
+                            <li  id="outside" style="opacity:1">
                                 <span><h3>校外</h3></span>
                             </li>
-                            <li >
+                            <li  id="teach">
                                 <span><h3>教学相关</h3></span>
                             </li>
-                            <li >
+                            <li  id="life">
                                 <span><h3>生活相关</h3></span>
                             </li>
-                            <li >
+                            <li id="activity">
                                 <span><h3>活动相关</h3></span>
                             </li>
 
                         </ul>
-                        <ul class="img_wrap_section" name="img_wrap_section"id="wrap_outside" >
+                        <ul class="img_wrap_section" id="wrap_outside" style="display:block">
                             <li>
                                     <a href="http://www.renren.com" target="_blank" >
                                     <div class="content" >
                                         <img src="http://121.40.178.228:8089/public/images/renren.jpg" >
                                     
-                                    </div>
-                                    <div class="content2" hidden="hidden">
+                                   
+                                    <div class="content_wrap">
                                             <h3>人人网</h3>
-                                            <p>校内是一个真实的社交网络,联络你和你周围的朋友</p>
+                                            <p>校内是一个真实的社交网络</p>
                                     </div>
+                                     </div>
                                     </a>
                             </li>
                             <li>
@@ -106,11 +116,12 @@
                                     <h3>百度</h3>
                                     <p>百度一下，你就知道</p>
                             </div>-->
-                                    </div>
-                                    <div class="content2"hidden="hidden">
+                                   
+                                    <div class="content_wrap">
                                             <h3>百度</h3>
                                             <p>百度一下，你就知道</p>
                                     </div>
+                                     </div>
                                     </a>
                             </li>
                             <li>
@@ -121,10 +132,11 @@
                                         <h3>淘宝</h3>
                                         <p>亚洲最大的网上交易平台</p>
                                     </div>-->
-                                    </div>
-                                    <div class="content2"hidden="hidden">
+                                    
+                                    <div class="content_wrap">
                                             <h3>淘宝</h3>
                                             <p>亚洲最大的网上交易平台</p>
+                                    </div>
                                     </div>
                                     </a>
                             </li>
@@ -136,10 +148,11 @@
                                             <h3>交大贴吧</h3>
                                             <p>交大学子的网络生活平台</p>
                                     </div>-->
-                                    </div>
-                                    <div class="content2"hidden="hidden">
+                                    
+                                   <div class="content_wrap">
                                             <h3>交大贴吧</h3>
                                             <p>交大学子的网络生活平台</p>
+                                    </div>
                                     </div>
                                     </a>
                             </li>
@@ -151,17 +164,18 @@
                                 <h3>新浪微博</h3>
                                 <p>全中国最主流，最具人气，当前最火爆的微博产品</p>
                             </div>-->
-                                    </div>
-                                    <div class="content2"hidden="hidden">
+                                    
+                                    <div class="content_wrap">
                                         <h3>新浪微博</h3>
-                                        <p>全中国最主流，最具人气，当前最火爆的微博产品</p>
+                                        <p>全中国最主流，最具人气的微博产品</p>
+                                    </div>
                                     </div>
                                     </a>
                             </li>
                         </ul>
 
 
-                        <ul class="img_wrap_section" name="img_wrap_section" id="wrap_teach" >
+                        <ul class="img_wrap_section" id="wrap_teach" style="display:none" >
                           <li>
                                     <a href="http://jwc.sjtu.edu.cn/" target="_blank">
                                     <div class="content">
@@ -172,9 +186,10 @@
                                           <p>上海交通大学本科教学信息网</p>
                                           </div>
                                     </div>-->
-                                    <div class="content2"hidden="hidden">
+                                   <div class="content_wrap">
                                             <h3>教务处</h3>
                                             <p>上海交通大学本科教学信息网</p>
+                                  </div>
                                   </div>
                                   </a>
                           </li>
@@ -187,11 +202,12 @@
 
                                 <p>对原选课系统的全面升级</p>
                             </div>-->
-                                </div>
-                                <div class="content2"hidden="hidden">
+                                
+                                <div class="content_wrap">
                                         <h3>教育信息服务网</h3>
                                         <p>对原选课系统的全面升级</p>
 
+                                </div>
                                 </div>
                                </a>
                           </li>
@@ -205,10 +221,11 @@
 
                                 <p>上海交通大学财务信息门户</p>
                                 </div>-->
-                                </div>
-                                <div class="content2"hidden="hidden">
+                                
+                               <div class="content_wrap">
                                       <h3>财务处</h3>
                                       <p>上海交通大学财务信息门户</p>
+                                 </div>
                                  </div>
                                 </a>
                           </li>
@@ -222,12 +239,14 @@
 
                                 <p>上海交通大学物理实验中心</p>
                             </div>-->
-                                </div>
-                                <div class="content2"hidden="hidden">
+                                
+                                <div class="content_wrap">
                                       <h3>物理实验网</h3>
                                       <p>上海交通大学物理实验中心</p>
                                  </div>
+                                   </div>
                                 </a>
+                              
                           </li>
 
                           <li>
@@ -239,17 +258,18 @@
 
                                 <p>上海交通大学欢迎你</p>
                             </div>-->
-                                </div>
-                                <div class="content2"hidden="hidden">
+                                
+                                <div class="content_wrap">
                                     <h3>交大主页</h3>
                                     <p>上海交通大学欢迎你</p>
+                                </div>
                                 </div>
                                </a>
                           </li>
                        </ul>
 
 
-                         <ul class="img_wrap_section" name="img_wrap_section" id="wrap_life" >
+                         <ul class="img_wrap_section" id="wrap_life" style="display:none">
                                 <li>
                                       <a href="http://ele.me/" target="_blank">
                                       <div class="content" >
@@ -260,11 +280,12 @@
 
                                 <p>中国最专业的网上订餐平台</p>
                             </div>-->
-                                      </div>
-                                      <div class="content2"hidden="hidden">
+                                      
+                                      <div class="content_wrap">
                                       <h3>饿了么</h3>
 
                                       <p>中国最专业的网上订餐平台</p>
+                                      </div>
                                       </div>
                                       </a>
                                 </li>
@@ -278,11 +299,12 @@
 
                                 <p>高校后勤数字化管理平台</p>
                             </div>-->
-                                      </div>
-                                      <div class="content2"hidden="hidden">
+                                      
+                                      <div class="content_wrap">
                                           <h3>水电费查询</h3>
 
                                           <p>高校后勤数字化管理平台</p>
+                                      </div>
                                       </div>
                                        </a>
                                  </li>
@@ -296,12 +318,13 @@
 
                                 <p>学生宿舍网络信息系统</p>
                             </div>-->
-                                      </div>
-                                      <div class="content2"hidden="hidden">
+                                      
+                                      <div class="content_wrap">
                                           <h3>NIMO网管部</h3>
 
                                          <p>学生宿舍网络信息系统</p>
                                       </div>
+                                    </div>
                                       </a>
                                 </li>
 
@@ -314,10 +337,11 @@
 
                                 <p>一站式社区网上超市</p>
                             </div>-->
-                                      </div>
-                                      <div class="content2"hidden="hidden">
+                                      
+                                      <div class="content_wrap">
                                           <h3>欢校网</h3>
                                           <p>一站式社区网上超市</p>
+                                      </div>
                                       </div>
                                       </a>
                                 </li>
@@ -331,17 +355,18 @@
 
                                 <p>全新的慈善公益捐赠平台</p>
                             </div>-->
-                                      </div>
-                                      <div class="content2"hidden="hidden">
+                                      
+                                      <div class="content_wrap">
                                           <h3>爱心屋</h3>
                                           <p>全新的慈善公益捐赠平台</p>
+                                      </div>
                                       </div>
                                       </a>
                                 </li>
 
                        </ul>
 
-                      <ul class="img_wrap_section" name="img_wrap_section"  id="wrap_activity" >
+                      <ul class="img_wrap_section" id="wrap_activity"  style="display:none">
                                 <li>
                                     <a href="ttp://vol.sjtu.edu.cn/" target="_blank">
                                     <div class="content" >
@@ -352,10 +377,11 @@
 
                                 <p>上海交通大学青年志愿者服务总队</p>
                             </div>-->
-                                    </div>
-                                    <div class="content2" hidden="hidden">
+                                    
+                                    <div class="content_wrap">
                                     <h3>校青志队</h3>
                                     <p>上海交通大学青年志愿者服务总队</p>
+                                   </div>
                                    </div>
                                     </a>
                                 </li>
@@ -370,11 +396,12 @@
 
                                 <p>校内外站友的信息交流平台</p>
                             </div>-->
-                                  </div>
-                                  <div class="content2" hidden="hidden">
+                                  
+                                 <div class="content_wrap">
                                   <h3>饮水思源BBS</h3>
 
                                   <p>校内外站友的信息交流平台</p>
+                                  </div>
                                   </div>
                                 </a>
                                 </li>
@@ -389,10 +416,11 @@
 
                                 <p>易班网是高校教育教学、生活服务、文化娱乐的综合性互动社区</p>
                             </div>-->
-                                    </div>
-                                    <div class="content2"hidden="hidden">
+                                    
+                                    <div class="content_wrap">
                                     <h3>易班</h3>
-                                    <p>易班网是高校教育教学、生活服务、文化娱乐的综合性互动社区</p>
+                                    <p>易班网是高校综合性互动社区</p>
+                                    </div>
                                     </div>
                                     </a>
                                 </li>
@@ -406,10 +434,11 @@
 
                                 <p>学生事务中心</p>
                             </div>-->
-                                    </div>
-                                    <div class="content2" hidden="hidden">
+                                    
+                                    <div class="content_wrap">
                                     <h3>学生事务中心</h3>
                                     <p>学生事务中心</p>
+                                    </div>
                                     </div>
                                     </a>
                                  </li>
@@ -422,10 +451,11 @@
                                     <h3>同去网</h3>
                                     <p>提供校园活动的信息整合</p>
                                 </div>-->
-                                    </div>
-                                    <div class="content2" hidden="hidden">
+                                    
+                                    <div class="content_wrap">
                                     <h3>同去网</h3>
                                     <p>提供校园活动的信息整合</p>
+                                    </div>
                                     </div>
                                     </a>
                                 </li>
@@ -435,6 +465,8 @@
 
       <footer>
         <script type="text/javascript" src="js/starter.js"></script>
+        <script type="text/javascript" src="js/change.js"></script>
+            <script type="text/javascript" src="js/last.js"></script>
       </footer>
 </body>
 
